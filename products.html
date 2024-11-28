@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Jewelry Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Jewelry Shop</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tìm kiếm và Lọc (Search and Filter) -->
+    <section id="search-and-filter">
+        <h2>Search and Filter</h2>
+        <div class="search-filter-container">
+            <input
+                type="text"
+                id="search-bar"
+                class="search-bar"
+                placeholder="Search for products..."
+                oninput="filterProducts()"
+            />
+            <select id="category-filter" onchange="filterProducts()" class="category-filter">
+                <option value="all">All Categories</option>
+                <option value="Nhẫn">Rings</option>
+                <option value="Hoa tai">Earrings</option>
+                <option value="Mặt dây">Necklaces</option>
+                <option value="Lắc">Bracelets</option>
+                <option value="Vòng">Charms</option>
+                <option value="Kiềng">Chains</option>
+                <option value="Dây chuyền">Necklaces</option>
+                <option value="Dây liền mặt">Full Necklaces</option>
+                <option value="Vòng charm">Charm Bracelets</option>
+                <option value="Ghim cài áo">Brooches</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Quản lý sản phẩm cho admin -->
+    <section id="product-management" style="display: none;">
+        <h2>Manage Products (Admin Only)</h2>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="text" id="product-image" placeholder="Image URL" required>
+            <button type="button" onclick="addOrUpdateProduct()">Save Product</button>
+        </form>
+        <div id="admin-product-list" class="product-grid"></div>
+    </section>
+
+    <!-- Hiển thị sản phẩm cho người dùng -->
+    <section id="user-products">
+        <h2>Products</h2>
+        <div id="product-display" class="product-grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

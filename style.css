@@ -1,0 +1,280 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ảnh nền đồng bộ cho toàn bộ website */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Màu chữ ban đầu */
+    background-image: url('https://anhdepfree.com/wp-content/uploads/2020/04/hinh-nen-mau-vang-2k.jpg'); /* Ảnh nền đồng bộ */
+    background-size: cover; /* Phủ kín nền */
+    background-position: center; /* Canh giữa ảnh nền */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+    background-attachment: fixed; /* Ảnh nền cố định khi cuộn */
+    text-align: center; /* Căn giữa toàn bộ chữ */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(31, 60, 136, 0.9); /* Màu nền thanh điều hướng với độ trong suốt */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Căn giữa các liên kết điều hướng */
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0f295d;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Màu chữ ban đầu */
+    text-align: center; /* Căn giữa chữ */
+}
+
+/* Welcome Section (Trang Home) */
+.welcome {
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ cho nội dung */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Màu chữ nổi trên lớp phủ mờ */
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center; /* Căn giữa chữ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    color: #333; /* Màu chữ ban đầu */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #1f3c88; /* Màu ban đầu */
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    background-color: #1f3c88;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #0f295d;
+}
+
+/* Cart Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #333; /* Màu chữ ban đầu */
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center; /* Căn giữa chữ */
+}
+
+table th {
+    background-color: rgba(31, 60, 136, 0.9); /* Màu xanh mờ */
+    color: #fff;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #1f3c88;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0f295d;
+}
+
+/* Checkout Section */
+#checkout-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(248, 249, 250, 0.85); /* Màu sáng mờ */
+    border-radius: 8px;
+    text-align: center; /* Căn giữa chữ */
+    color: #333; /* Màu chữ ban đầu */
+}
+
+#checkout-section h3 {
+    font-size: 1.5rem;
+    color: #1f3c88; /* Màu ban đầu */
+    margin-bottom: 15px;
+}
+
+#checkout-section button {
+    background-color: #28a745;
+}
+
+#checkout-section button:hover {
+    background-color: #218838;
+}
+
+/* Account Section */
+.account-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #333; /* Màu chữ ban đầu */
+    text-align: center; /* Căn giữa chữ */
+}
+
+.account-section h2 {
+    color: #1f3c88; /* Màu ban đầu */
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333; /* Màu chữ ban đầu */
+    text-align: center; /* Căn giữa nội dung ô nhập */
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #1f3c88;
+}
+
+.form-container button:hover {
+    background-color: #0f295d;
+}
+
+/* Order History */
+.order-history h3 {
+    color: #1f3c88; /* Màu ban đầu */
+    font-size: 1.5rem;
+}
+
+.order-history p {
+    background-color: rgba(241, 241, 241, 0.85);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 8px;
+    color: #333; /* Màu chữ ban đầu */
+    text-align: center; /* Căn giữa chữ */
+}
+
+/* Support Section */
+#support-form {
+    display: flex;
+    flex-direction: column;
+    color: #333; /* Màu chữ ban đầu */
+}
+
+#support-form textarea {
+    resize: vertical;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 100px;
+    color: #333; /* Màu chữ ban đầu */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+#support-form button {
+    align-self: flex-end;
+    background-color: #2f4371;
+}
+
+#support-form button:hover {
+    background-color: #0f295d;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Jewelry Shop - Admin Panel</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+
+    <section class="admin-section">
+        <h2>Product Management</h2>
+
+        <!-- Form Thêm/Chỉnh Sửa Sản Phẩm -->
+        <div id="product-form">
+            <h3 id="form-title">Add Product</h3>
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="text" id="product-description" placeholder="Description" required>
+            <button onclick="addOrUpdateProduct()">Save Product</button>
+        </div>
+
+        <!-- Danh sách Sản phẩm -->
+        <div id="product-list">
+            <h3>Product List</h3>
+            <ul id="admin-products">
+                <!-- Sản phẩm sẽ được hiển thị tại đây -->
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
